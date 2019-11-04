@@ -12,9 +12,10 @@ html {
 }
 
 header {
-    height: 92px;
+    height: fit-content;
     background-color: #1e1e1e;
     text-align: center;
+    vertical-align: middle;
 }
 
 div.content {
@@ -22,18 +23,14 @@ div.content {
 }
 
 div.banner {
-    max-height: 50px;
-    display: inline;
-}
-
-div.banner2 {
     color: white;
-    display: inline;
+    max-height: 50px;
+    padding-top: 21px;
+    padding-bottom: 21px;
 }
 
 a.logo {
     vertical-align: middle;
-    margin-top: 30px;
 }
 
 a {
