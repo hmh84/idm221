@@ -6,6 +6,8 @@
     font-style: normal;
 }
 
+* { box-sizing: border-box; margin: 0; padding: 0;}
+
 html { 
     font-family: 'offerings';
     font-size: 100%;
@@ -16,26 +18,85 @@ header {
     background-color: #1e1e1e;
     text-align: center;
     vertical-align: middle;
-}
-
-div.content {
-    text-align: center;
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+    top: 0;
+    margin-bottom: 5%;
 }
 
 div.banner {
     color: white;
-    max-height: 50px;
-    padding-top: 21px;
-    padding-bottom: 21px;
+    height: 100%;
+    width: 100%;
+    padding: 21px 0;
+    scroll-padding-left: 10px;
 }
 
-a.logo {
+div.banner img{
+    position: relative;
+    left: -8%;
+    max-width: 50px;
+    max-height: 50px;
+}
+
+div.banner a {
+    position: absolute;
+    left: 5%;
+    top: 14%;
+}
+
+.spacer {
+    width: 100%;
+    height: 69px;
+}
+
+div.content {
+    text-align: center;
+    padding: 0% 5% 0% 5%;
+    max-width: 375px;
+}
+
+div.content img {
+    width: 100%;
+}
+
+p.title {
+    position: relative;
+    left: 0;
+    top: 0;
+}
+
+div.section {
+    width: 100%;
+    background-color: #fff;
+    text-align: center;
     vertical-align: middle;
+    position: sticky;
+    top: 8.56%;
+    overflow: visible;
+    z-index: 20;
+}
+
+div.section p {
+    padding: 5% 0;
 }
 
 a {
     color: rgb(100, 100, 100);
     text-decoration: none;
+    vertical-align: middle;
+}
+
+h {
+    font-size: 1.5rem;
+    text-align: center;
+    position: relative;
+    left: 2%;
+}
+
+p {
+    margin: 1rem 0;
 }
 
 /* ---------- Links ---------- */
