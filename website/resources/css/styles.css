@@ -29,8 +29,12 @@ div.banner {
     color: white;
     height: 100%;
     width: 100%;
-    padding: 21px 0;
+    padding: 1.5rem 0;
     scroll-padding-left: 10px;
+}
+
+#banner2 {
+    background-color: #505050;
 }
 
 div.banner img{
@@ -42,19 +46,30 @@ div.banner img{
 
 div.banner a {
     position: absolute;
-    left: 5%;
-    top: 14%;
+    left: 4%;
+    top: 8%;
+}
+
+#resume, #contact {
+    display: inline;
+    top: 0%;
+    color: #fff;
+    font-size: 1rem;
+    text-align: center;
+    position: relative;
+    left: 0%;
+    margin: 0% 15%;
 }
 
 .spacer {
     width: 100%;
-    height: 69px;
+    height: 8.8625rem;
 }
 
 div.content {
     text-align: center;
     padding: 0% 5% 0% 5%;
-    max-width: 375px;
+    max-width: 23.4375rem;
 }
 
 div.content img {
@@ -97,18 +112,4 @@ h {
 
 p {
     margin: 1rem 0;
-}
-
-/* ---------- Links ---------- */
-
-a:hover {
-    text-decoration: underline;
-}
-
-a:active {
-    color: rgb(200, 200, 200);
-}
-
-a:visited {
-    color: rgb(100, 100, 100);
 }
