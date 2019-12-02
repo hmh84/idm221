@@ -13,7 +13,7 @@ html {
     font-size: 100%;
 }
 
-header {
+header { /*Contains both banners*/
     height: fit-content;
     background-color: #1e1e1e;
     text-align: center;
@@ -25,7 +25,7 @@ header {
     margin-bottom: 5%;
 }
 
-div.banner {
+div.banner { /*Banner 1*/
     color: white;
     height: 100%;
     width: 100%;
@@ -33,37 +33,44 @@ div.banner {
     scroll-padding-left: 10px;
 }
 
-#banner2 {
+#banner2 { /*Banner 2 (Navbar)*/
     background-color: #505050;
+    padding: .8rem 0px;
 }
 
 div.banner img{
-    position: relative;
-    left: -8%;
+    position: fixed;
+    top: .8rem;
+    left: 1rem;
     max-width: 50px;
     max-height: 50px;
 }
 
 div.banner a {
     position: absolute;
-    left: 4%;
-    top: 8%;
+    left: 3.8%;
+    top: 9%;
 }
 
 #resume, #contact {
     display: inline;
     top: 0%;
     color: #fff;
-    font-size: 1rem;
+    font-size: 1.2rem;
     text-align: center;
     position: relative;
     left: 0%;
     margin: 0% 15%;
 }
 
-.spacer {
+.spacer { /*This rests behind header to keep content hight correct*/
     width: 100%;
-    height: 8.8625rem;
+    height: 4.6875rem;
+}
+
+#home_spacer { /*This is the spacer designed for the home page, it has a different hight than the content indexes*/
+    width: 100%;
+    height: 7.661875rem;
 }
 
 div.content {
@@ -82,19 +89,20 @@ p.title {
     top: 0;
 }
 
-div.section {
+div.section { /*Sticky sub-banner Ex.Yiwen Liang, Kayla Moore*/
     width: 100%;
     background-color: #fff;
     text-align: center;
     vertical-align: middle;
     position: sticky;
-    top: 8.56%;
+    top: 9.2%;
     overflow: visible;
     z-index: 20;
 }
 
 div.section p {
     padding: 5% 0;
+    margin: -5%;
 }
 
 a {
@@ -106,8 +114,6 @@ a {
 h {
     font-size: 1.5rem;
     text-align: center;
-    position: relative;
-    left: 2%;
 }
 
 p {
