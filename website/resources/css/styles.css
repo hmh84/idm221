@@ -6,136 +6,133 @@
     font-style: normal;
 }
 
-* { box-sizing: border-box; margin: 0; padding: 0;}
+* { box-sizing: border-box; padding: 0;}
 
-html { 
-    font-family: 'offerings';
-    font-size: 100%;
-    line-height: 1.5rem;
+html
+{
+	font-family: 'offerings';
+	font-size: 100%;
+	line-height: 1.5rem;
 }
-
-header { /*Contains both banners*/
-    height: fit-content;
-    background-color: #1e1e1e;
-    text-align: center;
-    vertical-align: middle;
-    width: 100%;
-    position: fixed;
-    z-index: 100;
-    top: 0;
-    margin-bottom: 5%;
+#home_spacer
+{
+	margin-top: 7.8125rem;
 }
-
-div.banner { /*Banner 1*/
-    color: white;
-    height: 4.6875rem;
-    width: 100%;
-    padding: 1.5rem 0;
+main
+{
+	margin-top: 5.7606875rem;
 }
-
-#banner2, #banner3 { /*Banner 2 (Navbar)*/
-    background-color: #505050;
-    padding: .8rem 0;
-    height: 50px;
+header
+{
+	background-color: #1e1e1e;
+	position: fixed;
+	text-align: center;
+	top: 0;
+	vertical-align: middle;
+	width: 100%;
+	z-index: 100;
 }
-
-div.banner img{
-    position: fixed;
-    top: .8rem;
-    left: 1rem;
-    max-width: 3.125rem;
-    max-height: 3.125rem;
+div.banner
+{
+	color: white;
+	height: 4.6875rem;
+	padding: 1.5rem 0;
+	width: 100%;
 }
-
-#resume, #contact, #footer {
-    display: inline;
-    top: 0;
-    color: #fff;
-    font-size: 1.2rem;
-    text-align: center;
-    position: relative;
-    left: 0;
-    margin: 0 15%;
+#banner2, #banner3
+{
+	background-color: #505050;
+	height: 3.125rem;
+	padding: .8rem 0;
 }
-
-.spacer { /*This rests behind header to keep content hight correct*/
-    width: 100%;
-    height: 5.85rem;
+div.banner img
+{
+	left: 1rem;
+	max-height: 3.125rem;
+	max-width: 3.125rem;
+	position: fixed;
+	top: .8rem;
 }
-
-#home_spacer { /*This is the spacer designed for the home page, it has a different hight than the content indexes*/
-    width: 100%;
-    height: 7.8125rem;
+#resume, #contact, #footer
+{
+	color: #fff;
+	display: inline;
+	font-size: 1.2rem;
+	left: 0;
+	margin: 0 15%;
+	position: relative;
+	text-align: center;
+	top: 0;
 }
-
-div.content {
-    text-align: center;
-    padding: 0 5% 0 5%;
-    max-width: 23.4375rem;
+div.content
+{
+	max-width: 23.4375rem;
+	padding: 0 5% 0 5%;
+	text-align: center;
 }
-
-div.content img {
-    width: 100%;
+div.content img
+{
+	width: 99%;
 }
-
-p.title {
-    position: relative;
-    left: 0;
-    top: 0;
+p.title
+{
+	left: 0;
+	position: relative;
+	top: 0;
 }
-
-div.section { /*Sticky sub-banner Ex.Yiwen Liang, Kayla Moore*/
-    width: 100%;
-    background-color: #fff;
-    text-align: center;
-    vertical-align: middle;
-    position: sticky;
-    top: 9.2%;
-    overflow: visible;
-    z-index: 20;
+div.section
+{
+	background-color: #fff;
+	overflow: visible;
+	position: sticky;
+	text-align: center;
+	top: 9.2%;
+	vertical-align: middle;
+	width: 100%;
+	z-index: 20;
 }
-
-div.section p {
-    padding: 5% 0;
-    margin: -5%;
-    font-size: 1.3rem;
+div.section p
+{
+	font-size: 1.3rem;
+	margin: -5%;
+	padding: 5% 0;
 }
-
-a {
-    color: rgb(100, 100, 100);
-    text-decoration: none;
-    vertical-align: middle;
+a
+{
+	color: rgb(100, 100, 100);
+	text-decoration: none;
+	vertical-align: middle;
 }
-
-h {
-    font-size: 1.5rem;
-    text-align: center;
+h
+{
+	font-size: 1.5rem;
+	text-align: center;
 }
-
-p {
-    margin: 1rem 0;
+p
+{
+	margin: 1rem 0;
 }
-
-footer {
-    width: 100%;
-    height: auto;
-    background-color: #505050;
-    text-align: center;
+footer
+{
+	background-color: #505050;
+	height: auto;
+	text-align: center;
+	width: 100%;
 }
-
-.banner #banner3 {
-    position: fixed;
-    bottom: 0;
+.banner #banner3
+{
+	bottom: 0;
+	position: fixed;
 }
-
-footer div.banner {
-    height: 50px;
-    padding: 0.75rem;
+footer div.banner
+{
+	height: 3.125rem;
+	padding: 0.75rem;
 }
-
-footer .banner a {
-    text-decoration-line: underline;
-    position: inherit;
-    font-size: 1rem;
-    color: #FFF;
+footer .banner a
+{
+	color: #FFF;
+	font-size: 1rem;
+	position: inherit;
+	text-decoration-line: underline;
 }

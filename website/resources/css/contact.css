@@ -1,0 +1,47 @@
+body
+{
+	background-position: center;
+	text-align: center;
+}
+.contact_title
+{
+	margin: 3.125rem 0;
+	text-transform: uppercase;
+}
+form
+{
+	margin-top: 2rem;
+}
+.form_control
+{
+	border: none;
+	border-bottom: 0.0625rem solid #505050;
+	margin-bottom: 1.2rem;
+	outline: none;
+	width: 75%;
+}
+input
+{
+	height: 2rem;
+}
+form .submit
+{
+	background: #505050;
+	border-color: transparent;
+	color: #fff;
+	font-weight: bold;
+	height: 3.125rem;
+	margin-top: 1.2rem;
+}
+form .submit:hover
+{
+	background-color: #505050;
+	cursor: pointer;
+}
+textarea
+{
+	max-height: 24rem;
+	max-width: 75%;
+	min-height: 6rem;
+	min-width: 75%;
+}
