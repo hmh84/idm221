@@ -40,7 +40,7 @@ form .submit:hover
 }
 textarea
 {
-	max-height: 24rem;
+	max-height: 40vh;
 	max-width: 75%;
 	min-height: 6rem;
 	min-width: 75%;

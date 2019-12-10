@@ -8,29 +8,54 @@
 
 * { box-sizing: border-box; padding: 0;}
 
+.spacer { /*This rests behind header to keep content hight correct*/
+    width: 100%;
+    height: 4.6875rem;
+}
+span#resume {
+    left: 0;
+}
+span {
+    display: inline-block;
+    position: fixed;
+    height: 3.125rem;
+    width: 50%;
+    top: 4.6875rem;
+    padding: 0.8125rem;
+}
+#line {
+	position: fixed;
+    background-color: #fff;
+    top: 5.46875rem;
+    left: 50%;
+    width: 0.125rem;
+    height: 1.5625rem;
+}
+main {
+    margin-top: 1.0625rem;
+}
+div#home_space.spacer {
+	height: 7.8125rem;
+}
+
 html
 {
 	font-family: 'offerings';
 	font-size: 100%;
 	line-height: 1.5rem;
 }
-#home_spacer
-{
-	margin-top: 7.8125rem;
-}
-main
-{
-	margin-top: 5.7606875rem;
-}
 header
 {
 	background-color: #1e1e1e;
 	position: fixed;
-	text-align: center;
 	top: 0;
 	vertical-align: middle;
 	width: 100%;
 	z-index: 100;
+	font-size: 1.2rem;
+}
+header a{
+	color: #fff;
 }
 div.banner
 {
@@ -38,6 +63,7 @@ div.banner
 	height: 4.6875rem;
 	padding: 1.5rem 0;
 	width: 100%;
+	text-align: center;
 }
 #banner2, #banner3
 {
@@ -53,7 +79,7 @@ div.banner img
 	position: fixed;
 	top: .8rem;
 }
-#resume, #contact, #footer
+#footer
 {
 	color: #fff;
 	display: inline;
@@ -61,7 +87,6 @@ div.banner img
 	left: 0;
 	margin: 0 15%;
 	position: relative;
-	text-align: center;
 	top: 0;
 }
 div.content
@@ -85,7 +110,6 @@ div.section
 	background-color: #fff;
 	overflow: visible;
 	position: sticky;
-	text-align: center;
 	top: 9.2%;
 	vertical-align: middle;
 	width: 100%;
@@ -106,7 +130,6 @@ a
 h
 {
 	font-size: 1.5rem;
-	text-align: center;
 }
 p
 {
@@ -116,7 +139,6 @@ footer
 {
 	background-color: #505050;
 	height: auto;
-	text-align: center;
 	width: 100%;
 }
 .banner #banner3
@@ -135,4 +157,8 @@ footer .banner a
 	font-size: 1rem;
 	position: inherit;
 	text-decoration-line: underline;
+}
+
+button a {
+    color: #fff;
 }
