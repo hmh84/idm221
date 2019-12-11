@@ -1,0 +1,23 @@
+.home_column
+{
+	flex: 33%;
+	max-width: 33%;
+	-ms-flex: 33%;
+	padding: 1.67%;
+	position: relative;
+}
+.home_column img
+{
+	vertical-align: middle;
+	width: 100%;
+}
+@media screen and (max-width: 720px)
+{
+	.home_column
+	{
+		flex: 100%;
+		max-width: 100%;
+		-ms-flex: 50%;
+		padding: 5% 0 5% 0;
+	}
+}
