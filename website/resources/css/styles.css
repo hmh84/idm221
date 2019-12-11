@@ -6,8 +6,6 @@
     font-style: normal;
 }
 
-* { box-sizing: border-box; padding: 0;}
-
 .spacer { /*This rests behind header to keep content hight correct*/
     width: 100%;
     height: 4.6875rem;
