@@ -12,17 +12,6 @@
     width: 100%;
     height: 4.6875rem;
 }
-span#resume {
-    left: 0;
-}
-span {
-    display: inline-block;
-    position: fixed;
-    height: 3.125rem;
-    width: 50%;
-    top: 4.6875rem;
-    padding: 0.8125rem;
-}
 #line {
 	position: fixed;
     background-color: #fff;
@@ -42,6 +31,7 @@ html
 {
 	font-family: 'offerings';
 	font-size: 100%;
+	font-weight: 600;
 	line-height: 1.5rem;
 }
 header
@@ -64,12 +54,6 @@ div.banner
 	padding: 1.5rem 0;
 	width: 100%;
 	text-align: center;
-}
-#banner2, #banner3
-{
-	background-color: #505050;
-	height: 3.125rem;
-	padding: .8rem 0;
 }
 div.banner img
 {
@@ -110,6 +94,7 @@ div.section
 	background-color: #fff;
 	overflow: visible;
 	position: sticky;
+	position: -webkit-sticky;
 	top: 9.2%;
 	vertical-align: middle;
 	width: 100%;
@@ -130,6 +115,7 @@ a
 h
 {
 	font-size: 1.5rem;
+	position: relative;
 }
 p
 {
@@ -159,6 +145,22 @@ footer .banner a
 	text-decoration-line: underline;
 }
 
-button a {
-    color: #fff;
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+    background-color: #505050;
+}
+
+li {
+	float: left;
+	width: 50%;
+}
+
+li a {
+	display: block;
+    color: #ffffff;
+    text-align: center;
+    padding: .8125rem;
 }
