@@ -138,7 +138,7 @@ li a
 	display: -ms-flexbox;
 	flex-wrap: wrap;
 	-ms-flex-wrap: wrap;
-	padding: 5%;
+	padding: 5% 5% 0 5%;
 }
 .row#row1, div#home_column1
 {
@@ -242,9 +242,6 @@ form .submit
 	height: 3.125rem;
 	margin-top: 1.2rem;
 }
-input.form_control.submit {
-    padding: 1% 0 0 0;
-}
 form .submit:hover
 {
 	background-color: #505050;
@@ -252,7 +249,7 @@ form .submit:hover
 }
 textarea
 {
-	max-height: 45vh;
+	max-height: 38vh;
 	max-width: 75%;
 	min-height: 8rem;
 	min-width: 75%;
@@ -269,4 +266,11 @@ textarea
 
   ::-ms-input-placeholder { /* Microsoft Edge */
 	color: black;
+}
+.social_media {
+    padding-top: 5%;
+}
+.social_media img {
+    height: 50px;
+    width: 50px;
 }
