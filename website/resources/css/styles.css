@@ -138,7 +138,7 @@ li a
 	display: -ms-flexbox;
 	flex-wrap: wrap;
 	-ms-flex-wrap: wrap;
-	padding: 5% 5% 0 5%;
+	padding: 5%;
 }
 .row#row1, div#home_column1
 {
