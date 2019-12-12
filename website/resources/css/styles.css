@@ -8,17 +8,18 @@
 }
 .spacer
 {
-	height: 75px;
+	height: 4.6875rem;
 	width: 100%;
 }
 #line
 {
 	background-color: #fff;
-	height: 1.5625rem;
-	left: 50%;
-	position: fixed;
-	top: 5.46875rem;
-	width: 0.125rem;
+    height: 1.5625rem;
+    left: 50%;
+    position: fixed;
+    z-index: 95;
+    top: 5.46875rem;
+    width: 0.125rem;
 }
 div#home_space.spacer
 {
@@ -33,13 +34,12 @@ html
 }
 header
 {
-	background-color: #1e1e1e;
 	font-size: 1.2rem;
-	position: fixed;
-	top: 0;
-	vertical-align: middle;
-	width: 100%;
-	z-index: 100;
+    position: fixed;
+    top: 0;
+    vertical-align: middle;
+    width: 100%;
+    z-index: 100;
 }
 header a
 {
@@ -47,19 +47,18 @@ header a
 }
 div.banner
 {
-	color: white;
-	height: 4.6875rem;
-	padding: 1.5rem 0;
-	text-align: center;
-	width: 100%;
+	background-color: black;
+    color: white;
+    height: 4.6875rem;
+    padding: 1.5rem 0;
+    text-align: center;
+    position: fixed;
+    z-index: 90;
+    width: 100%;
 }
 div.banner img
 {
-	left: 1rem;
 	max-height: 3.125rem;
-	max-width: 3.125rem;
-	position: fixed;
-	top: .8rem;
 }
 div.content
 {
@@ -98,15 +97,28 @@ p
 	position: fixed;
 }
 .banner a {
+    left: 1rem;
+    max-height: 3.125rem;
+    max-width: 3.125rem;
+    position: fixed;
+    top: .8rem;
     z-index: 100;
+}
+.banner h {
+    z-index: 80;
 }
 ul
 {
 	background-color: #505050;
-	list-style-type: none;
-	margin: 0;
-	overflow: hidden;
-	padding: 0;
+    width: 100%;
+    list-style-type: none;
+    margin: 0;
+    overflow: hidden;
+    padding: 0;
+    display: block;
+    position: fixed;
+    z-index: 90;
+    top: 4.6875rem;
 }
 li
 {
@@ -135,12 +147,13 @@ li a
 div.row_title
 {
 	background: white;
-	height: 50px;
-	line-height: 50px;
+	color: crimson;
+	height: 3.125rem;
+	line-height: 3.125rem;
 	position: sticky;
 	position: -webkit-sticky;
 	text-align: center;
-	top: 75px;
+	top: 4.6875rem;
 	vertical-align: middle;
 	width: 100%;
 	z-index: 10;
@@ -156,64 +169,81 @@ div.row_title
 }
 .btt
 {
-	bottom: 0;
-	left: 85vw;
-	position: sticky;
-	position: -webkit-sticky;
-	width: 50px;
-	z-index: 20;
+	bottom: 5%;
+    right: 5%;
+	opacity: 0.5; /* Standard compliant browsers */
+    -moz-opacity: 0.5; /* Firefox and Mozilla browsers */
+    -webkit-opacity: 0.5; /* WebKit browser e.g. Safari */
+    filter: alpha(opacity=50); /* For IE8 and earlier */
+    position: fixed;
+    width: 3.125rem;
+    z-index: 20;
 }
 .column_title
 {
-	background-color: #ffffff;
-	bottom: 4%;
-	height: 10%;
-	position: absolute;
-	width: 100%;
+	background: rgba(255, 255, 255, 0.5);
+    /* opacity: 0.5;
+    -moz-opacity: 0.5;
+    -webkit-opacity: 0.5;
+    filter: alpha(opacity=50); */
+    bottom: 4%;
+    height: 3rem;
+    position: absolute;
+    width: 100%;
 }
 .column_title h
 {
 	color: #000000;
-	display: block;
-	padding: 2.5%;
-	text-align: center;
+    font-size: 1.2rem;
+    display: block;
+    padding: 3%;
+    text-align: center;
 }
 body
 {
 	background-position: center;
+	background-size: auto, cover;
 	text-align: center;
+	background-image: url("../images/processed/pattern.png");
 }
 .contact_title
 {
 	margin: 3.125rem 0;
 	text-transform: uppercase;
+	color: crimson;
 }
 form
 {
 	margin-top: 2rem;
+	font-size: 1.2rem;
 }
 .form_control
 {
 	border: none;
+	background: transparent;
 	border-bottom: 0.0625rem solid #505050;
-	font-weight: 800;
-	margin-bottom: 1.2rem;
+	margin-bottom: .5rem;
+	border-radius: 0;
 	outline: none;
 	width: 75%;
 }
 input
 {
 	height: 2rem;
+	padding-left: .5rem;
 }
 form .submit
 {
 	background: #1f1f1f;
 	border-color: transparent;
-	border-radius: 8px;
+	border-radius: .5rem;
 	color: #fff;
 	font-weight: bold;
 	height: 3.125rem;
 	margin-top: 1.2rem;
+}
+input.form_control.submit {
+    padding: 1% 0 0 0;
 }
 form .submit:hover
 {
@@ -222,8 +252,21 @@ form .submit:hover
 }
 textarea
 {
-	max-height: 40vh;
+	max-height: 45vh;
 	max-width: 75%;
-	min-height: 6rem;
+	min-height: 8rem;
 	min-width: 75%;
+	padding: .5rem;
+}
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+	color: black;
+	opacity: 1; /* Firefox */
+}
+
+  :-ms-input-placeholder { /* Internet Explorer 10-11 */
+	color: black;
+}
+
+  ::-ms-input-placeholder { /* Microsoft Edge */
+	color: black;
 }

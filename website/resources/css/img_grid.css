@@ -1,7 +1,6 @@
 .column
 {
 	flex: 25%;
-	max-width: 25%;
 	-ms-flex: 25%;
 	position: relative;
 }
